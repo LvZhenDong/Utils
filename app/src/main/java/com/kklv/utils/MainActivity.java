@@ -14,7 +14,7 @@ import com.kklv.utils.utils.HttpHelper;
 import com.kklv.utils.utils.HttpRequestParams;
 import com.kklv.utils.utils.L;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,15 +31,8 @@ public class MainActivity extends AppCompatActivity{
                         .setAction("Action", null).show();
             }
         });
-
         HttpRequestParams params = new HttpRequestParams();
-        params.addParams("Html_AccOrPhone", "182028062");
-        params.addParams("Html_Pass","F59BD65F7EDAFB087A81D4DCA06C4910");
-        params.addParams("flag","2");
-        params.addParams("loca_x","103.97556");
-        params.addParams("loca_y","30.739632");
-        HttpHelper.getHttpRequest("http://www.ehuu.com//apiv4/clientApiuserLogin", params, new HttpCallBack() {
-
+        HttpHelper.getHttpRequest("https://www.baidu.com/", params, new HttpCallBack() {
 
             @Override
             public void onSuccess(String result) {
